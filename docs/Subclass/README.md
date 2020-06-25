@@ -2,6 +2,12 @@
 
 ## 📙 contents
 
+### Subclass
+
+1. [Subclass (클래스상속)](###📖-Subclass)
+
+### Encapsulating
+
 1. [Referencing Environment](###📖-Referencing-Environment)
 
 2. [A Slight Problem and Solution](###📖-2-1-Function)
@@ -13,6 +19,48 @@
     - Subclass
 
 3. [A Short Comparison of Encapsulating Method](###📖-3.-장단점)
+
+### 📖 Subclass
+
+- Example: class 사용
+    ```py
+    class Point:
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+        def __str__(self):
+            return f"({self.x}, {self.y})"
+
+    if __name__ == "__main__":
+        for y in range(2):
+            for x in range(3):
+                p = Point(x, y)
+                print(p, end=" ")
+            print()
+    ```
+- Subclass사용
+    ```py
+    class NamedPoint(Point):
+        def __init__(self, name, x, y):
+            Point.__init__(self, x, y)
+            self.name = name
+        def __str__(self):
+            return f"{self.name}"+Point.__str__(self)
+
+    class Point:
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+        def __str__(self):
+            return f"({self.x}, {self.y})"
+
+    if __name__ == "__main__":
+        a = Point(2, 3)
+        b = NamedPoint('B', 3, 5)
+        pnts = [a, b]
+        for p in pnts:
+            print(p)
+    ```
 
 ### 📖 Referencing Environment
 
