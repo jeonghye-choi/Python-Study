@@ -2,9 +2,9 @@
 
 ## 📙 contents
 
-1. Referencing Environment
+1. [Referencing Environment](###📖-Referencing-Environment)
 
-2. A Slight Problem and Solution
+2. [A Slight Problem and Solution](###📖-2-1-Function)
 
     - Big Function
 
@@ -12,7 +12,7 @@
 
     - Subclass
 
-3. A Short Comparison of Encapsulating Method
+3. [A Short Comparison of Encapsulating Method](###📖-3.-장단점)
 
 ### 📖 Referencing Environment
 
@@ -249,12 +249,12 @@
         <a href="https://brunch.co.kr/@princox/180">참고</a>
 
 
-### 📖 2 장단점
+### 📖 3. 장단점
 
 ![image](https://user-images.githubusercontent.com/54584063/85611079-8faa3b00-b692-11ea-8028-43ac798d75be.png)
 
 
-### 📖 arguments
+### 📖 4. arguments
 
 - list arguments
 
