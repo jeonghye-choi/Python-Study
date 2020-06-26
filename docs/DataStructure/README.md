@@ -40,6 +40,39 @@
     m2 = [[i+j for j in range(3)] for i in range(3)]
     print(m2)
     ```
+- 한변의 길이가 짝수인 정사각형의 넓이출력; Using List Comprehension
+
+    ```py
+    [i*i for i in range(1,5) if i%2 == 0]
+    ```
+
+- 좌표출력; Using List Comprehension
+
+    ```py
+    [(x,y) for x in range(5) for y in range(5)]
+
+    # [(0,0), (0,1), (0,2), ... ,(4,4)]
+    ```
+
+- Dictionary Comprehension
+
+    ```py
+    student = ["Kim", "Lee", "Park", "Choi"]
+    {f"{number}" : name for number, name in enumerate(student)}
+    # {'0': 'Kim', '1': 'Lee', '2': 'Park', '3': 'Choi'}
+
+    {f"{number}" : name for number, name in enumerate(student)}
+    # {'1': 'Kim', '2': 'Lee', '3': 'Park', '4': 'Choi'}
+    ```
+
+- Dictionary Comprehension; Using *zip*
+
+    ```py
+    A = ["male", "dad", "man"]
+    B = ["female", "mom", "woman"]
+    result = {A:B for A, B in zip(A,B)}
+    # {'male': 'female', 'dad': 'mom', 'man': 'woman'}
+    ```
 
 ### 📖 Nested Loops
 
