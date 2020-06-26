@@ -1,4 +1,4 @@
-# Diction 사전형
+# Dictionary 사전형
 
 Key와 Value의 쌍으로 구성된 집합
 
